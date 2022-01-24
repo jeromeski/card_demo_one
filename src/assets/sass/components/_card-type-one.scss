@@ -152,6 +152,10 @@
       display: none;
       right: 20px;
       bottom: 15px;
+
+      @media (max-width: 768px) {
+        display: inline-block;
+      }
     } 
   }
   & .item-body {
@@ -221,7 +225,11 @@
     }
 
     & .item-user-image {
-      display: none;
+      display: block;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     & .item-footer {
@@ -230,11 +238,11 @@
       width: auto;
       height: 24px;
       flex-direction: row-reverse;
-      justify-content: space-between;
+      
 
       @media (max-width: 768px){
         width: 100%;
-        float: none;
+        justify-content: space-between;
         margin-top: 15px;
       }
 
@@ -306,7 +314,7 @@
       }
 
       & .footer-left {
-        // margin-left: auto;
+          margin-left: auto;
         @media screen {
           margin-left: 0;
         }
