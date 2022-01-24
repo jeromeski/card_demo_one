@@ -29,6 +29,7 @@ export default function App() {
       <Container>
         <Row>
           <Col className="col">
+            <div style={{ marginTop: "15rem" }}></div>
             <CardTypeOne data={cardData} />
           </Col>
         </Row>
