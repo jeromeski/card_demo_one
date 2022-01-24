@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import "./assets/css/bootstrap.min.css";
 import "./assets/sass/main.scss";
 import CardTypeOne from "./components/CardTypeOne";
@@ -24,12 +25,14 @@ const cardData = {
 
 export default function App() {
   return (
-    <Container>
-      <Row>
-        <Col className="col">
-          <CardTypeOne data={cardData} />
-        </Col>
-      </Row>
-    </Container>
+    <Fragment>
+      <Container>
+        <Row>
+          <Col className="col">
+            <CardTypeOne data={cardData} />
+          </Col>
+        </Row>
+      </Container>
+    </Fragment>
   );
 }
